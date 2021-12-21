@@ -1,4 +1,15 @@
-﻿using System;
+﻿ /*
+  * FILE            : Server.cs
+  * PROJECT         : Quiz_Server - Demo Day
+  * PROGRAMMER     : Edward Boado
+  * FIRST VERSION   : 2021 - 12 - 04
+  * DESCRIPTION     : This file contains the Server class, which will listen and connect with clients via TCP socket.
+  *                   When a client connects, it will parse the received strings, call GameInstance methods to build responses,
+  *                   and then return the response before disconnecting.
+  */                  
+
+
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -22,12 +33,12 @@ namespace Quiz_Server
         {
         }
 
-
         // Method to create/return an instance, and only allow one instance
         public static Server getServerInstance
         {
             get
             {
+                // make thread safe
                 lock (lockServer)
                 {
                     if (gameServer == null)
@@ -131,8 +142,6 @@ namespace Quiz_Server
         }
 
 
-
-
         /*
         *	NAME	:	HandleRequest
         *	PURPOSE	:	This method will allow a single task thread to handle a client request in parallel.
@@ -192,6 +201,13 @@ namespace Quiz_Server
         }
 
 
+        /*
+        *	NAME	:	ParseReceived
+        *	PURPOSE	:	This method will take the received string, check what action needs to be taken, 
+        *	            and call method to handle it.
+        *	INPUTS	:	string received - the string from the client
+        *	RETURNS	:	string  responseToSend.ToString() - the returned response from the method that is called
+        */
         public static string ParseReceived(string received)
         {
             GameInstance currentGame = new GameInstance();
@@ -218,6 +234,14 @@ namespace Quiz_Server
         }
 
 
+        /*
+        *	NAME	:	ContinueGame
+        *	PURPOSE	:	This method will take the received string, parse it, and build a response depending on
+        *	            which question number the player is at.
+        *	INPUTS	:	string received - the string from the client
+        *	            GameInstance currentGame - the GameInstance object for the current game
+        *	RETURNS	:	StringBuilder response - the returned response with data from the methods called
+        */
         public static StringBuilder ContinueGame(GameInstance currentGame, string received)
         {
             StringBuilder response = new StringBuilder();
@@ -277,12 +301,18 @@ namespace Quiz_Server
                 response.Append(question);
                 response.Append(answers);
             }
-
-
             return response;
         }
 
 
+        /*
+        *	NAME	:	EndGame
+        *	PURPOSE	:	This method will get the leaderboard players and scores and return them
+        *	INPUTS	:	string received - the string from the client
+        *	            GameInstance currentGame - the GameInstance object for the current game
+        *	            int userID
+        *	RETURNS	:	StringBuilder response - the returned response with data from the methods called
+        */
         public static StringBuilder EndGame(GameInstance currentGame, string received, int userID)
         {
             StringBuilder response = new StringBuilder();
@@ -297,7 +327,14 @@ namespace Quiz_Server
         }
 
 
-
+        /*
+        *	NAME	:	NewGame
+        *	PURPOSE	:	This method will get client string and parse it, then call methods to create a new user ID,
+        *	            then get the first question and its answers and return them
+        *	INPUTS	:	string received - the string from the client
+        *	            GameInstance currentGame - the GameInstance object for the current game
+        *	RETURNS	:	StringBuilder response - the returned response with data from the methods called
+        */
         public static StringBuilder NewGame(GameInstance currentGame, string received)
         {
             StringBuilder response = new StringBuilder();
@@ -318,7 +355,7 @@ namespace Quiz_Server
                 // Get answers
                 string answers = currentGame.GetAnswers(questionID);
 
-
+                // Add to string
                 response.Append(question);
                 response.Append(answers);
             }
@@ -327,6 +364,12 @@ namespace Quiz_Server
         }
 
 
+        /*
+        *	NAME	:	ShowAnswers
+        *	PURPOSE	:	This method will get the questions and their correct answers
+        *	INPUTS	:   GameInstance currentGame - the GameInstance object for the current game
+        *	RETURNS	:	StringBuilder response - the returned response with data from the methods called
+        */
         public static StringBuilder ShowAnswers(GameInstance currentGame)
         {
             StringBuilder response = new StringBuilder();

@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * FILE            : Program.cs
+ * PROJECT         : Quiz_Server - Demo Day
+ * PROGRAMMER     : Edward Boado
+ * FIRST VERSION   : 2021 - 12 - 20
+ * DESCRIPTION     : This file contains the Main method, which will instantiate a server, and use an async method
+ *                   to allow the server to listen and run indefinitely.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,11 +24,6 @@ namespace Quiz_Server
 
             // Call method to start async listening
             Listen();
-
-
-            // Run the server
-            //gameServer.Run();
-
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
@@ -39,8 +43,6 @@ namespace Quiz_Server
             {
                 await Server.Listen();
             }
-
         }
     }
-
 }

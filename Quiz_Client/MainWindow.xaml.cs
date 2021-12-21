@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+* FILE          :	MainWindow.xaml.cs
+* PROJECT       :	Quiz_Client - Demo Day
+* PROGRAMMER   :	Edward Boado
+* FINAL VERSION :	2021-12-07
+* DESCRIPTION   :	This file contains the code behind for the main game client UI. It will respond to button click events,
+*                   display game information in the UI, control the countdown timer, and send user input to the game client.
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -283,15 +293,7 @@ namespace Quiz_Client
                 btnAnswers.Content = "VIEW ANSWERS";
                 toggleAnswers = false;
             }
-
-
-
         }
-
-
-
-
-
 
 
         /*
@@ -314,12 +316,6 @@ namespace Quiz_Client
                 Close();
             }
         }
-
-
-
-
-
-
 
 
         /*
@@ -354,11 +350,5 @@ namespace Quiz_Client
             var hwnd = new System.Windows.Interop.WindowInteropHelper(this).Handle;
             SetWindowLong(hwnd, GWL_STYLE, GetWindowLong(hwnd, GWL_STYLE) & ~WS_SYSMENU);
         }
-
-
-
-
     }
-
-
 }

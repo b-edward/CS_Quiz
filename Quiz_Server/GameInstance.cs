@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * FILE            : GameInstance.cs
+ * PROJECT         : Quiz_Server - Demo Day
+ * PROGRAMMER     : Edward Boado
+ * FIRST VERSION   : 2021 - 12 - 12
+ * DESCRIPTION     : This file contains the GameInstance class, which will allow the server to run the quiz game.
+ *                   It will take requests, and call the database handler to build responses.
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -35,7 +45,6 @@ namespace Quiz_Server
 
             return connected;
         }
-
 
 
         // Enter new user in db, return the userID
@@ -136,6 +145,7 @@ namespace Quiz_Server
         }
 
 
+        // method to get the next question
         public string GetQuestion(int questionID)
         {
             // Select from db to get customers
@@ -174,6 +184,7 @@ namespace Quiz_Server
         }
 
 
+        // method to get the answers corresponding to a question
         public string GetAnswers(int questionID)
         {
             DataTable answerTable = new DataTable();
@@ -195,6 +206,7 @@ namespace Quiz_Server
 
                 if (answerTable != null)
                 {
+                    // Build a string using the returned selection
                     theAnswers.Append($"questionID={questionID};");
                     string correct = null;
                     foreach (DataRow row in answerTable.Rows)
@@ -220,6 +232,7 @@ namespace Quiz_Server
         }
 
 
+        // method for end of game display info
         public string GameOver(int userID)
         {
             StringBuilder scores = new StringBuilder();
@@ -301,6 +314,7 @@ namespace Quiz_Server
         }
 
 
+        // method to get the questions and their correct answers
         public StringBuilder ShowAnswers()
         {
             // Select from db to get question and answer texts

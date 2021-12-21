@@ -1,7 +1,7 @@
 ﻿///
 /// FILE            : Logger.cs
-/// PROJECT         : AKEE_TMS
-/// PROGRAMMERS     : 
+/// PROJECT         : Quiz_Client - Demo Day
+/// PROGRAMMER     : Edward Boado
 /// FIRST VERSION   : 2021-11-24
 /// DESCRIPTION     : This file contains the Logger class, which will write status and error messages to a txt file.
 ///                   The class uses a try/catch to handle exceptions. If writing to the file fails, it will instead write to the EventLog. 

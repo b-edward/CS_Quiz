@@ -1,12 +1,12 @@
 ﻿/*
 * FILE          :	GameClient.cs
-* PROJECT       :	
-* PROGRAMMERS   :	Edward Boado
-* FINAL VERSION :	2021-11-21
+* PROJECT       :	Quiz_Client - Demo Day
+* PROGRAMMER   :	Edward Boado
+* FINAL VERSION :	2021-12-07
 * DESCRIPTION   :	This file contains the GameClient class, which will facilitate communication between the user and the game server.
-*                   The program will model a Hi-Lo game client. It will provide a user interface for interacting
-*                   with a game server. The game will tell you if you are too high or too low in your guesses 
-*                   until you win by guessing the correct number
+*                   The program will model a trivia/quiz game. It gets questions/answers and userIDs from the server. It will present 
+*                   questions to the user, and assign a score based on a timer countdown, then send the scores to the server. When the 
+*                   questions are completed, it will display the player's final score as well as the leaderboard of top 5 user scores.
 */
 
 
@@ -72,8 +72,6 @@ namespace Quiz_Client
             string logFile = ConfigurationManager.AppSettings.Get("clientLogFile");
             clientLog = new Logger(logFile);
         }
-
-
 
 
         /*
@@ -206,7 +204,6 @@ namespace Quiz_Client
         }
 
 
-
         /*
         *	NAME	:	ProcessResponse
         *	PURPOSE	:	This method will parse the response package from the server and assign new values to data members.
@@ -288,7 +285,7 @@ namespace Quiz_Client
             return status;
         }
 
-
+        // method to display leaderboard
         public string GameOver(string packageReceived)
         {
             string response = "GAMEOVER";
@@ -328,12 +325,15 @@ namespace Quiz_Client
             return response;
         }
 
+
+        // method to call server for the correct answers
         public void GetAnswers()
         {
             SendToServer("ANSWERS");
         }
 
 
+        // method to display the correct answers
         public string ShowAnswers(string packageReceived)
         {
             string result = "OK";
@@ -389,11 +389,7 @@ namespace Quiz_Client
             {
                 isValid = false;
             }
-
-
             return isValid;
         }
-
-
     }
 }

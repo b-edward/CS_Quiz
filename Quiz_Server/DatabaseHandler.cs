@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * FILE            : DatabaseHandler.cs
+ * PROJECT         : Quiz_Server - Demo Day
+ * PROGRAMMER     : Edward Boado
+ * FIRST VERSION   : 2021 - 12 - 08
+ * DESCRIPTION     : This file contains the DatabaseHandler class, which will connect to a MySQL database server. It will
+ *                   take queries/commands, run them on the database, and then return the response data.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -45,6 +54,7 @@ namespace Quiz_Server
         {
             bool connected = false;
 
+            // Get configurable database server settings from file
             string ip = ConfigurationManager.AppSettings.Get("ip");
             string port = ConfigurationManager.AppSettings.Get("dbPort");
             string database = ConfigurationManager.AppSettings.Get("database");
