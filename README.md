@@ -19,9 +19,9 @@ This project was based on a combination of projects, using both new as well as p
 
 #### Screenshots
 
-![User Interface Example](https://github.com/b-edward/Study_Quiz/tree/main/Info/Start.png)<br/>
-![User Interface Example](https://github.com/b-edward/Study_Quiz/tree/main/Info/Quiz.png)<br/>
-![User Interface Example](https://github.com/b-edward/Study_Quiz/tree/main/Info/Scores.png)<br/>
-![User Interface Example](https://github.com/b-edward/Study_Quiz/tree/main/Info/MultipleClients.png)<br/>
-![User Interface Example](https://github.com/b-edward/Study_Quiz/tree/main/Info/ServerVM.png)<br/>
-![User Interface Example](https://github.com/b-edward/Study_Quiz/tree/main/Info/AzureDeployment.png)<br/>
+![User Interface Example](https://github.com/b-edward/Study_Quiz/blob/main/Info/Start.png)<br/>
+![User Interface Example](https://github.com/b-edward/Study_Quiz/blob/main/Info/Quiz.png)<br/>
+![User Interface Example](https://github.com/b-edward/Study_Quiz/blob/main/Info/Scores.png)<br/>
+![User Interface Example](https://github.com/b-edward/Study_Quiz/blob/main/Info/MultipleClients.png)<br/>
+![User Interface Example](https://github.com/b-edward/Study_Quiz/blob/main/Info/ServerVM.png)<br/>
+![User Interface Example](https://github.com/b-edward/Study_Quiz/blob/main/Info/AzureDeployment.png)<br/>
