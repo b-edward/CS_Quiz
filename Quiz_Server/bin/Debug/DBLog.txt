@@ -1,0 +1,18 @@
+2021-12-20 20:49:08 - [ERROR] - Could not log into the database
+2021-12-20 20:49:08 - [ERROR] - Could not select command: SELECT * FROM `Users` WHERE userName='Edward'
+2021-12-20 20:49:08 - [ERROR] - Could not execute command: INSERT INTO `Users` (`userName`) VALUES ('Edward')
+2021-12-20 20:49:08 - [ERROR] - Could not select command: SELECT * FROM `Users` WHERE userName='Edward'
+2021-12-20 20:49:08 - [ERROR] - Could not log into the database
+2021-12-20 20:49:08 - [ERROR] - Could not log into the database
+2021-12-20 20:49:16 - [ERROR] - Could not log into the database
+2021-12-20 20:49:16 - [ERROR] - Could not select command: SELECT * FROM `Users` WHERE userName='Edward'
+2021-12-20 20:49:16 - [ERROR] - Could not execute command: INSERT INTO `Users` (`userName`) VALUES ('Edward')
+2021-12-20 20:49:16 - [ERROR] - Could not select command: SELECT * FROM `Users` WHERE userName='Edward'
+2021-12-20 20:49:16 - [ERROR] - Could not log into the database
+2021-12-20 20:49:16 - [ERROR] - Could not log into the database
+2021-12-20 20:49:27 - [ERROR] - Could not log into the database
+2021-12-20 20:49:27 - [ERROR] - Could not select command: SELECT * FROM `Users` WHERE userName='Edward'
+2021-12-20 20:49:27 - [ERROR] - Could not execute command: INSERT INTO `Users` (`userName`) VALUES ('Edward')
+2021-12-20 20:49:27 - [ERROR] - Could not select command: SELECT * FROM `Users` WHERE userName='Edward'
+2021-12-20 20:49:27 - [ERROR] - Could not log into the database
+2021-12-20 20:49:27 - [ERROR] - Could not log into the database
