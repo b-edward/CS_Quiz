@@ -46,7 +46,7 @@ namespace Quiz_Server
             bool connected = false;
 
             string ip = ConfigurationManager.AppSettings.Get("ip");
-            string port = ConfigurationManager.AppSettings.Get("port");
+            string port = ConfigurationManager.AppSettings.Get("dbPort");
             string database = ConfigurationManager.AppSettings.Get("database");
             string username = ConfigurationManager.AppSettings.Get("user");
             string password = ConfigurationManager.AppSettings.Get("password");

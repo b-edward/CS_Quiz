@@ -1,8 +1,3 @@
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.csproj.AssemblyReference.cache
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\MainWindow.g.cs
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\App.g.cs
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client_MarkupCompile.cache
-C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client_MarkupCompile.lref
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\Quiz_Client.exe.config
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\Quiz_Client.exe
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\Quiz_Client.pdb
@@ -14,6 +9,10 @@ C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\System.Security.AccessControl.xml
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\System.Security.Permissions.xml
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\MainWindow.g.cs
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\App.g.cs
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client_MarkupCompile.cache
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client_MarkupCompile.lref
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\MainWindow.baml
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.g.resources
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.Properties.Resources.resources
@@ -22,3 +21,4 @@ C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.csproj.CopyComplete
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.exe
 C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.pdb
+C:\Users\edboa\Source\Repos\Semester 3 Repos\GDSC\DemoDay\Quiz_Client\obj\Debug\Quiz_Client.csproj.AssemblyReference.cache
