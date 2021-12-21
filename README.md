@@ -1,5 +1,6 @@
 # Web Development Study Quiz
-This project is a trivia/quiz game to aid students in studying material for web development tests and exams.
+This project is a trivia/quiz game to aid students in studying material for web development tests and exams. 
+To test the client application, copy the Quiz Game folder, and run the Quiz_Client.exe file.
 
 ## Features
 * 20 second answer timer
